@@ -1,0 +1,42 @@
+
+body {
+  background: #fff5fa;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.kitty-talk {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px;
+}
+
+.kitty-head {
+  width: 120px;
+  height: auto;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #fff0f9;
+  border: 3px dashed #ff66b2;
+  border-radius: 30px;
+  padding: 25px;
+  max-width: 600px;
+  font-size: 18px;
+  color: #cc0077;
+  box-shadow: 0 5px 15px rgba(255, 153, 204, 0.3);
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #fff0f9;
+}
